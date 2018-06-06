@@ -34,6 +34,7 @@ class Song
       if song.name == name
         return song
     end}
+    return nil
   end
 
 end
