@@ -54,7 +54,7 @@ class Song
       name = track[1].strip
       song = self.create_by_name(name)
       song.artist_name = artist
-      song
+      return song
   end
 
 end
