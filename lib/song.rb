@@ -39,7 +39,7 @@ class Song
 
   def self.find_or_create_by_name(name)
       track = self.find_by_name(name)
-      track == nil ? self.create_by_name(name): return track
+      track == nil ? self.create_by_name(name): track
   end
 
 end
