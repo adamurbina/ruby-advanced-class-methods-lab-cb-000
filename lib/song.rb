@@ -50,8 +50,8 @@ class Song
       track = file.split(/[\.-]/)
       artist = track[0].strip
       name = track[1].strip
-      self.create_by_name(name)
-      @artist_name = artist
+      song = self.create_by_name(name)
+      song.artist_name = artist
   end
 
 end
