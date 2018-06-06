@@ -63,6 +63,3 @@ class Song
   end
 
 end
-
-songy = Song.new_from_filename("Thundercat - For Love I Come.mp3")
-binding.pry
