@@ -38,10 +38,11 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-      if self.find_by_name(name) == nil
+      track = self.find_by_name(name)
+      if track == nil
           self.create_by_name(name)
       else
-          self.find_by_name
+          return track
       end
   end
 
