@@ -42,7 +42,7 @@ class Song
       track == nil ? self.create_by_name(name) : track
   end
 
-  def alphabetical
+  def self.alphabetical
       self.all.sort_by{|song| song.name}
   end
 
