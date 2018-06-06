@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -55,3 +57,6 @@ class Song
   end
 
 end
+
+songy = Song.new_from_filename("Thundercat - For Love I Come.mp3")
+binding.pry
