@@ -30,7 +30,7 @@ class Song
   end
 
   def self.find_by_name(name)
-      if 
+      self.all.each {|song| if song.name = name return song}
   end
 
 end
